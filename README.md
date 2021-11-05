@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Currently we are using react version 17.0.2. All the commands for external liberies will be based on this react version.
+For sass -  npm i sass              // then simple import and export scss files.
+
+### Motion framework requires react 16.8 or greater
+npm install framer-motion
+
+### Material Ui
+npm install @mui/material @emotion/react @emotion/styled
+
+### react-router-dom@6.0.0
+npm i react-router-dom
