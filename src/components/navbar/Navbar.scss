@@ -1,0 +1,21 @@
+.navbarContainer {
+  padding-top:25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .navbarContainer--tabsGrid {
+    display: flex;
+    justify-content: space-between;
+
+    .navbarContainer--tabsGrid--tabs {
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      color: #000019;
+      &:hover {
+        color: #ec5b53;
+      }
+    }
+  }
+}
