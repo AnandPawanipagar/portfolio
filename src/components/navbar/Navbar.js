@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { motion } from "framer-motion";
 import { Grid, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
@@ -37,7 +38,14 @@ const Navbar = () => {
           <Button className="navbarContainer--tabsGrid--tabs" variant="text">
             Contact
           </Button>
-          <ConsultentButton variant="contained" size="large">
+          <ConsultentButton
+            component={motion.div}
+            whileHover={{
+              backgroundColor: "#ffd245",
+            }}
+            variant="contained"
+            size="large"
+          >
             Get Free Consultent
           </ConsultentButton>
         </Grid>
