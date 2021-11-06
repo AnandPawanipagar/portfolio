@@ -1,0 +1,34 @@
+.introOuterContainer {
+  background-color: #D7DBDA;
+ 
+  .introOuterContainer--container {
+    padding-right: 10%;
+    padding-left: 10%;
+
+    .introOuterContainer--container--grid1--firstPara {
+      font-size: 18px;
+
+      color: #ec5b53;
+      text-transform: uppercase;
+    }
+    .introOuterContainer--container--grid1--secondPara {
+      font-size: 70px;
+      font-weight: 700;
+      margin-bottom: 14 px;
+      color: #002d5b;
+
+      text-transform: capitalize;
+    }
+    .introOuterContainer--container--grid1--thirdPara {
+      font-family: "Rubik", sans-serif;
+      color: #464d65;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+    .introOuterContainer--container--grid1--hiremeAndLearnMore {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+}
