@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Grid, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -8,6 +9,7 @@ const ConsultentButton = styled(Button)({
   backgroundColor: "#ec5b53",
   color: "white",
 });
+const tabs = ["Home", "About", "Services", "Portfolio", "Page", "Contact"];
 
 const Navbar = () => {
   return (
@@ -20,24 +22,17 @@ const Navbar = () => {
           />
         </Grid>
         <Grid className="navbarContainer--tabsGrid" xs={8}>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            Home
-          </Button>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            About
-          </Button>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            Services
-          </Button>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            Portfolio
-          </Button>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            Page
-          </Button>
-          <Button className="navbarContainer--tabsGrid--tabs" variant="text">
-            Contact
-          </Button>
+          {tabs.map((tab) => {
+            return (
+              <Button
+                className="navbarContainer--tabsGrid--tabs"
+                variant="text"
+              >
+                {tab}
+              </Button>
+            );
+          })}
+
           <ConsultentButton
             component={motion.div}
             whileHover={{
