@@ -1,11 +1,11 @@
 import "./App.scss";
-import Navbar from "./components/navbar";
-import Intro from "./components/intro";
+import Home from "./Components/Home";
 function App() {
-  return <>
-    <Navbar/>
-    <Intro/>
-  </>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
