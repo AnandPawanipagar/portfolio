@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-
+import Routes from "../Routes";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Grid, Button } from "@mui/material";
@@ -51,6 +51,7 @@ const Navbar = () => {
           </ConsultentButton>
         </Grid>
       </Grid>
+      <Routes />
     </>
   );
 };
