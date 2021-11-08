@@ -17,14 +17,15 @@ const Intro = () => {
         <Grid item xs={6}>
           <motion.p
             className="introOuterContainer--container--grid1--firstPara"
-            animate={{ fontSize: "18px" }}
+            initial={{opacity:0}} animate={{ fontSize: "18px", opacity:1 }}
             transition={{ duration: "0.5" }}
           >
             Get Every Single Solutions
           </motion.p>
           <motion.p
             className="introOuterContainer--container--grid1--secondPara"
-            animate={{ fontSize: "70px" }}
+            initial={{opacity:0}}
+            animate={{opacity:1, fontSize: "70px" }}
             transition={{ duration: "0.5" }}
           >
             I’m Designer
@@ -32,7 +33,8 @@ const Intro = () => {
           </motion.p>
           <motion.p
             className="introOuterContainer--container--grid1--thirdPara"
-            animate={{ fontSize: "16px" }}
+            initial={{opacity:0}}
+            animate={{ opacity:1, fontSize: "16px" }}
             transition={{ duration: "0.5" }}
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
@@ -42,7 +44,7 @@ const Intro = () => {
           <div className="introOuterContainer--container--grid1--hiremeAndLearnMore">
             <LearnMoreButton
               component={motion.div}
-              whileHover={{}}
+            
               variant="contained"
               size="large"
               style={{ marginRight: "20px" }}
