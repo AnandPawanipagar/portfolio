@@ -21,7 +21,7 @@ const tabs = [
 const Navbar = () => {
   return (
     <>
-      <Grid container spacing={0} className="navbarContainer">
+      <Grid container spacing={0} className="navbarContainer" component={motion.div} initial={{y:"-100vh"}} animate={{y:0}} transition={{duration:0.5}}>
         <Grid xs={4} className="navbarContainer--logoGrid">
           <img src="images/logo.webp" alt="Portfolio" />
         </Grid>

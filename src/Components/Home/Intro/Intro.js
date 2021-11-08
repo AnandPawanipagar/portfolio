@@ -15,17 +15,30 @@ const Intro = () => {
     <div className="introOuterContainer">
       <Grid container className="introOuterContainer--container">
         <Grid item xs={6}>
-          <p className="introOuterContainer--container--grid1--firstPara">
+          <motion.p
+            className="introOuterContainer--container--grid1--firstPara"
+            animate={{ fontSize: "18px" }}
+            transition={{ duration: "0.5" }}
+          >
             Get Every Single Solutions
-          </p>
-          <h1 className="introOuterContainer--container--grid1--secondPara">
-            I’m Designer Haris F. Watson
-          </h1>
-          <p className="introOuterContainer--container--grid1--thirdPara">
+          </motion.p>
+          <motion.p
+            className="introOuterContainer--container--grid1--secondPara"
+            animate={{ fontSize: "70px" }}
+            transition={{ duration: "0.5" }}
+          >
+            I’m Designer
+            <br /> Haris F. Watson
+          </motion.p>
+          <motion.p
+            className="introOuterContainer--container--grid1--thirdPara"
+            animate={{ fontSize: "16px" }}
+            transition={{ duration: "0.5" }}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
             vitae provident! Culpa totam blanditiis autem, ipsum assumenda nulla
             corrupti eligendi!
-          </p>
+          </motion.p>
           <div className="introOuterContainer--container--grid1--hiremeAndLearnMore">
             <LearnMoreButton
               component={motion.div}
@@ -47,7 +60,13 @@ const Intro = () => {
           </div>
         </Grid>
         <Grid item xs={6}>
-          <img src="images/hero.jpg" alt="" />
+          <motion.img
+            initial={{ x: "100vh" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            src="images/hero.jpg"
+            alt=""
+          />
         </Grid>
       </Grid>
     </div>
