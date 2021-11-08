@@ -78,5 +78,5 @@ npm install framer-motion
 ### Material Ui
 npm install @mui/material @emotion/react @emotion/styled
 
-### react-router-dom@6.0.0
-npm i react-router-dom
+### react-router-dom@5.3.0
+npm i react-router-dom@5.3.0
