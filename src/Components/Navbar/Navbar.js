@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import Routes from "../Routes";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Grid, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -20,7 +20,7 @@ const tabs = [
 
 const Navbar = () => {
   return (
-    <>
+    <Router>
       <Grid container spacing={0} className="navbarContainer">
         <Grid xs={4} className="navbarContainer--logoGrid">
           <img src="images/logo.webp" alt="Portfolio" />
@@ -52,7 +52,7 @@ const Navbar = () => {
         </Grid>
       </Grid>
       <Routes />
-    </>
+    </Router>
   );
 };
 
